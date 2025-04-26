@@ -1,6 +1,7 @@
 **1. Install Node.js and npm**
 
 sudo apt update
+
 sudo apt install nodejs npm -y
 
 **2. Install Playwright**
