@@ -3,8 +3,8 @@ const { test, expect } = require('@playwright/test');
 // This will run before each test
 test.beforeEach('Login test',async ({ page }) => {
   await page.goto('https://easecommerce.in/app/login');
-  await page.fill('input[name="username"]', 'demouser@easecommerce.in');
-  await page.fill('input[name="password"]', 'cE7iQPP^');
+  await page.fill('input[name="username"]', 'username');
+  await page.fill('input[name="password"]', 'password');
   await page.click('button[id=":r2:"]');
 });
 
@@ -24,12 +24,6 @@ test('Validate switching to Employee View', async ({ page }) => {
 
 // Test 3: Task Creation
 test('Task Creation successfully', async ({ page }) => {
-
-
-  // await page.goto('https://easecommerce.in/app/login');
-  // await page.fill('input[name="username"]', 'demouser@easecommerce.in');
-  // await page.fill('input[name="password"]', 'cE7iQPP^');
-  // await page.click('button[id=":r2:"]');
 
 
   await page.waitForTimeout(10000);
